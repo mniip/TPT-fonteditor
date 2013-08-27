@@ -1,4 +1,4 @@
-HEIGHT=10
+HEIGHT=12
 FILE="../font.h"
 OUT="rawfont.txt"
 START="//#DATA"
