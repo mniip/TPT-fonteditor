@@ -55,6 +55,7 @@ for i in pairs(chars_l) do
 	n=n+1
 	chars[n]=i
 end
+table.sort(chars)
 local blocks_l={}
 for _,i in ipairs(chars) do
 	blocks_l[math.floor(i/16)]=true

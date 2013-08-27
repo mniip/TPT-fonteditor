@@ -25,8 +25,8 @@ assert(f:write"") -- test
 for block=1,nmap do
 	for i=0,15 do
 		local ptr=assert(font_ptrs[block*16-15+i],"font_ptrs too short")
-		if ptr~=0 or block==1 then
-			local idx=block_map[block]*16+i
+		local idx=block_map[block]*16+i
+		if ptr~=0 or idx==0 then
 			if idx>31 then
 				f:write("'"..string.char(pack_utf8(idx)).."'")
 			else
